@@ -68,17 +68,14 @@ import {
 import { commandPaletteService } from '../commandPaletteService';
 
 import { I18nProvider } from '@lingui/react';
+import { LocalStorageKeys } from '../constants.js';
 
 if (module.hot) {
 	require('preact/debug');
 }
 
-const LocalStorageKeys = {
-	LOGIN_AND_SAVE_MESSAGE_SEEN: 'loginAndsaveMessageSeen',
-	ASKED_TO_IMPORT_CREATIONS: 'askedToImportCreations'
-};
 const UNSAVED_WARNING_COUNT = 15;
-const version = '5.0.3';
+const version = '5.1.0';
 
 // Read forced settings as query parameters
 window.forcedSettings = {};
